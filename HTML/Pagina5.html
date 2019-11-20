@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WIKI2 G3</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/css.css">
+    <link rel="shortcut icon" href=" " type="image/x-icon" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- comienzo del header -->
+    <header>
+        <a href="Pagina1.html">
+            <img id="logo" alt=" este es el logo de la página y tiene como eslogan Aprende Aprendiendo"
+                src="../RECURSOS/logo.png">
+        </a>
+    </header>
+    <!-- fin del header y comienzo del div contenedor del nav y la section -->
+    <nav class="navbar navbar-expand-md bg-blue navbar-dark" id="nav2">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="Pagina1.html">PROXMOX</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Pagina2.html">DEBIAN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Pagina3.html">APACHE2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Pagina4.html">COPIAS</a>
+                </li>
+                <li class="nav-item" id="active">
+                    <a class="nav-link" href="Pagina5.html">FTP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Pagina6.html">DNS</a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link" href="Pagina7.html">CONTACTO</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="divContenedor">
+        <nav id="nav1">
+            <ul>
+                <!--MENU-->
+
+                <li>
+                    <a href="Pagina1.html">
+                        <img class="icono" alt="icono proxmox del menu" src="../RECURSOS/Proxmox.png">
+                        </href>
+                </li>
+                <li>
+                    <a href="Pagina2.html">
+                        <img class="icono" alt="icono proxmox del menu" src="../RECURSOS/Debian.png">
+                        </href>
+                </li>
+                <li>
+                    <a href="Pagina3.html">
+                        <img class="icono" alt="icono Apache2 del menu" src="../RECURSOS/Apache2.png">
+                    </a>
+                </li>
+                <li><a href="Pagina4.html">
+                        <img class="icono" alt="icono Qnap del menu" src="../RECURSOS/Qnap.png">
+                    </a>
+                </li>
+                <li id="active">
+                    <a href="Pagina5.html">
+                        <img class="icono" alt="icono Qnap del menu" src="../RECURSOS/Ftp.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="Pagina6.html">
+                        <img class="icono" alt="icono Qnap del menu" src="../RECURSOS/Dns.png">
+                    </a>
+                </li>
+                <li >
+                    <a href="Pagina6.html">
+                        <img class="icono" alt="icono Qnap del menu" src="../RECURSOS/Contacto.png">
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+        <section>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <h3 data-toggle="collapse">
+                                INSTALACIÓN DEL FTP
+                            </h3>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <div id="accordion2">
+                                <div class="card" data-toggle="collapse" data-target="#collapseAPARTADO1">
+                                    <div class="card-header" id="headingAPARTADO1">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse"
+                                                data-target="#collapseAPARTADO1" aria-expanded="true"
+                                                aria-controls="collapseAPARTADO1">
+                                                Instalacion FTP
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseAPARTADO1" class="collapse show" aria-labelledby="headingAPARTADO1"
+                                        data-parent="#accordion2">
+                                        <div class="card-body">
+                                            <article class ="tutorial">
+
+                                                <h2 class="titulo">Instalacion FTP</h2>
+                                                <h3 class ="texto"> 
+                                                    
+                                                    Para instalar FTP utilizaremos los sigueintes comandos  <br>
+                                                    <br>
+                                                    <b>apt-get update <br>
+                                                       apt-get install proftpd <br>
+                                                    </b>
+                                                </h3>
+                                                <img class ="imagentutorial" src="../RECURSOS/ftp.jpg" alt="imagen tutorial">
+                                    </article>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" data-toggle="collapse" data-target="#collapseAPARTADO2">
+                                    <div class="card-header" id="headingAPARTADO2">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapseAPARTADO2" aria-expanded="false"
+                                                aria-controls="collapseAPARTADO2">
+                                                CONFIGURACION FTP
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseAPARTADO2" class="collapse" aria-labelledby="headingAPARTADO2"
+                                        data-parent="#accordion2">
+                                        <div class="card-body">
+                                            <article class ="tutorial">
+
+                                                <h2 class="titulo">Configuracion FTP</h2>
+                                                <h3 class ="texto"> 
+                                                    
+                                                    Lo primero que debemos hacer para que el FTP sea funcional es crear un usuario <br>
+                                                    por suerte FTP utiliza los usuarios asique nosotros utilizaremos nuestro usuario <br>
+                                                    grupo3 pero podeis crear un nuevo usuario con el sigueinte comando <br>
+                                                    <br>
+                                                    <b>
+                                                    adduser ftpdaw -shell /bin/false -home /var/www/daw.com/public_html
+                                                    </b><br>
+                                                    <br>
+                                                    lo siguiente sera configurar el archivo proftpd.conf <br>
+                                                    <br>
+                                                    <b>nano /etc/proftpd/proftpd.conf</b> <br>
+                                                    <br>
+                                                    añadimos las sigueintes lineas en el apartado global
+                                                    <br>
+                                                    <b>
+                                                            RootLogin off <br>
+                                                            RequireValidShell off <br>    
+                                                    </b>
+                                                    <br>
+                                                    reiniciamos el servicio <br>
+                                                    <br>
+                                                    <b>
+                                                            service proftpd restart <br>  
+                                                    </b>
+                                                    <br>
+                                
+                                                    por ultimo añadimos las sigueintes linas al usuario que queramos dentro del archvio de configuracion <br>
+                                                    en nuestro utilizaremos el usuario anonimo <br>
+                                                    <br>
+                                                    <b>
+                                                    &lt;Anonymous /var/www/daw.com/public_html/anonimo&gt; <br>
+                                                        User ftp<br>
+                                                        Group nogroup<br>
+                                                        &lt;Limit LOGIN&gt;<br>
+                                                        AllowAll<br>
+                                                        &lt;/Limit&gt;<br>
+                                                        UserAlias anonymous ftp<br>
+                                                        DirFakeUser on ftp<br>
+                                                        DirFakeGroup on ftp<br>
+                                                        RequireValidShell off<br>
+                                                        MaxClients 10<br>
+                                                        &lt;Directory *&gt;<br>
+                                                        &lt;Limit WRITE&gt;<br>
+                                                        DenyAll<br>
+                                                        &lt;/Limit&gt;<br>
+                                                        &lt;/Directory&gt;<br>
+                                                        &lt;/Anonymous&gt;<br>
+                                                    </b>
+                                                </h3>
+                                                <img class ="imagentutorial" src="../RECURSOS/ftp.jpg" alt="imagen tutorial">
+                                    </article>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <div class="relleno">
+
+        </div>
+    </div>
+
+    <footer>
+        <a href="Pagina2.html">
+            <h3>MAS INFORMACION</h3>
+        </a>
+    </footer>
+</body>
+
+</html>

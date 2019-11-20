@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WIKI2 G3</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/css.css">
+    <link rel="shortcut icon" href=" " type="image/x-icon" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- comienzo del header -->
+    <header>
+        <a href="Pagina1.html">
+            <img id="logo" alt=" este es el logo de la página y tiene como eslogan Aprende Aprendiendo"
+                src="../RECURSOS/logo.png">
+        </a>
+    </header>
+    <!-- fin del header y comienzo del div contenedor del nav y la section -->
+    <nav class="navbar navbar-expand-md bg-blue navbar-dark" id="nav2">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="Pagina1.html">PROXMOX</a>
+                </li>
+                <li class="nav-item" id="active">
+                    <a class="nav-link" href="Pagina2.html">DEBIAN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Pagina3.html">APACHE2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Pagina4.html">COPIAS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Pagina5.html">FTP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Pagina6.html">DNS</a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link" href="Pagina7.html">CONTACTO</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="divContenedor">
+        <nav id="nav1">
+            <ul>
+                <!--MENU-->
+
+                <li>
+                    <a href="Pagina1.html">
+                        <img class="icono" alt="icono proxmox del menu" src="../RECURSOS/Proxmox.png">
+                        </href>
+                </li>
+                <li id="active">
+                    <a href="Pagina2.html">
+                        <img class="icono" alt="icono proxmox del menu" src="../RECURSOS/Debian.png">
+                        </href>
+                </li>
+                <li>
+                    <a href="Pagina3.html">
+                        <img class="icono" alt="icono Apache2 del menu" src="../RECURSOS/Apache2.png">
+                    </a>
+                </li>
+                <li><a href="Pagina4.html">
+                        <img class="icono" alt="icono Qnap del menu" src="../RECURSOS/Qnap.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="Pagina5.html">
+                        <img class="icono" alt="icono Qnap del menu" src="../RECURSOS/Ftp.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="Pagina6.html">
+                        <img class="icono" alt="icono Qnap del menu" src="../RECURSOS/Dns.png">
+                    </a>
+                </li>
+                <li >
+                    <a href="Pagina6.html">
+                        <img class="icono" alt="icono Qnap del menu" src="../RECURSOS/Contacto.png">
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+        <section>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <h3 data-toggle="collapse">
+                                 DEBIAN
+                            </h3>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <div id="accordion2">
+                                <div class="card" data-toggle="collapse" data-target="#collapseAPARTADO1">
+                                    <div class="card-header" id="headingAPARTADO1">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse"
+                                                data-target="#collapseAPARTADO1" aria-expanded="true"
+                                                aria-controls="collapseAPARTADO1">
+                                                Instalacion
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseAPARTADO1" class="collapse show" aria-labelledby="headingAPARTADO1"
+                                        data-parent="#accordion2">
+                                        <div class="card-body">
+                                            <article class="tutorial">
+                                                <h2 class="titulo">Debian Instalacion y SetUP</h2>
+                                                
+                                                <h6 class="texto">
+                                                    Debian es distinto a Ubuntu en algunos aspectos pero la instalacion incial es muy parecida. <br>
+                                                    A la hora de instalar lo mas importante es tener sufuciente ram en nuestra maquina para no <br>
+                                                    tener que hacerlo en modo comando <br>
+                                                    <br>
+                                                    <br>
+                                                    Una vez instalado Debian deberemos hacer unas configuraciones iniciales. <br>
+                                                    <br>
+                                                    Tendremos configurar las interfaces de red;<br>
+                                                    Para ello tenemos que ejecutar el siguiente comando: <br>
+                                                    <b>sudo nano /etc/networks/interfaces</b><br>
+                                                    Esto abrira el archivo de configuracion de las interfaces y lo editaremos de la siguiente manera : <br>
+                                                    <br>
+                                                    <b>
+                                                        auto ens18<br>
+                                                        iface ens18 inet static<br>
+                                                            address 10.9.52.108 (esta es la ip que vamos a tener) <br>
+                                                            netmask 255.255.255.0<br>
+                                                            network 10.9.52.0<br>
+                                                            broadcast 10.9.52.255<br>
+                                                            gateway 10.9.52.108<br>
+                                                    </b>
+                                                </h6>
+                                                
+                                        
+                                                <img class ="imagentutorial" src="../RECURSOS/interfaces.png" alt="imagen tutorial">
+                                        
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <div class="relleno">
+
+        </div>
+    </div>
+
+    <footer>
+        <a href="Pagina2.html">
+            <h3>MAS INFORMACION</h3>
+        </a>
+    </footer>
+</body>
+
+</html>
