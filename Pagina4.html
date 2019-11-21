@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WIKI2 G3</title>
-    <link rel="stylesheet" type="text/css" href="../CSS/css.css">
+    <link rel="stylesheet" type="text/css" href="CSS/css.css">
     <link rel="shortcut icon" href=" " type="image/x-icon" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +20,7 @@
     <header>
         <a href="Pagina1.html">
             <img id="logo" alt=" este es el logo de la página y tiene como eslogan Aprende Aprendiendo"
-                src="../RECURSOS/logo.png">
+                src="RECURSOS/logo.png">
         </a>
     </header>
     <!-- fin del header y comienzo del div contenedor del nav y la section -->
@@ -62,42 +62,42 @@
 
                 <li>
                     <a href="Pagina1.html">
-                        <img class="icono" alt="icono proxmox del menu" src="../RECURSOS/Proxmox.png">
+                        <img class="icono" alt="icono proxmox del menu" src="RECURSOS/Proxmox.png">
                         </href>
                 </li>
                 <li>
                     <a href="Pagina2.html">
-                        <img class="icono" alt="icono proxmox del menu" src="../RECURSOS/Debian.png">
+                        <img class="icono" alt="icono proxmox del menu" src="RECURSOS/Debian.png">
                         </href>
                 </li>
                 <li>
                     <a href="Pagina3.html">
-                        <img class="icono" alt="icono Apache2 del menu" src="../RECURSOS/Apache2.png">
+                        <img class="icono" alt="icono Apache2 del menu" src="RECURSOS/Apache2.png">
                     </a>
-                </li id="active">
-                <li><a href="Pagina4.html">
-                        <img class="icono" alt="icono Qnap del menu" src="../RECURSOS/Qnap.png">
+                </li >
+                <li id="active"><a href="Pagina4.html">
+                        <img class="icono" alt="icono Qnap del menu" src="RECURSOS/Qnap.png">
                     </a>
                 </li>
                 <li>
                     <a href="Pagina5.html">
-                        <img class="icono" alt="icono Qnap del menu" src="../RECURSOS/Ftp.png">
+                        <img class="icono" alt="icono Qnap del menu" src="RECURSOS/Ftp.png">
                     </a>
                 </li>
                 <li>
                     <a href="Pagina6.html">
-                        <img class="icono" alt="icono Qnap del menu" src="../RECURSOS/Dns.png">
+                        <img class="icono" alt="icono Qnap del menu" src="RECURSOS/Dns.png">
                     </a>
                 </li>
                 <li >
                     <a href="Pagina6.html">
-                        <img class="icono" alt="icono Qnap del menu" src="../RECURSOS/Contacto.png">
+                        <img class="icono" alt="icono Qnap del menu" src="RECURSOS/Contacto.png">
                     </a>
                 </li>
             </ul>
 
         </nav>
-        <section>
+        <section id="fondo">
             <div id="accordion">
                 <div class="card">
                     <div class="card-header" id="headingOne">
@@ -123,8 +123,8 @@
 
                                     <div id="collapseAPARTADO1" class="collapse show" aria-labelledby="headingAPARTADO1"
                                         data-parent="#accordion2">
-                                        <div class="card-body">
-                                            <iframe width="1280" height="720" src="https://www.youtube.com/embed/qaiQ_4fQQcI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <div class="card-body" id="videoContenedor">
+                                            <iframe  id="video" src="https://www.youtube.com/embed/qaiQ_4fQQcI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                         </div>
                                     </div>
                                 </div>
@@ -136,13 +136,10 @@
 
             </div>
         </section>
-        <div class="relleno">
-
-        </div>
     </div>
-
+    <section class ="completo"></section>
     <footer>
-        <a href="Pagina2.html">
+        <a href="Pagina7.html">
             <h3>MAS INFORMACION</h3>
         </a>
     </footer>
